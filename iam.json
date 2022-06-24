@@ -1,0 +1,20 @@
+{ 
+    "Version":"2012-10-17",
+    "Statement":[ 
+       { 
+          "Effect":"Allow",
+          "Action":"ec2-instance-connect:SendSSHPublicKey",
+          "Resource": "arn:aws:ec2:us-east-1:account-id:instance/*",
+          "Condition":{ 
+             "StringEquals":{ 
+                "aws:ResourceTag/tag-key":"tag-value"
+             }
+          }
+       },
+       {
+         "Effect": "Allow",
+         "Action": "ec2:DescribeInstances",
+         "Resource": "*"
+       }
+    ]
+ }
