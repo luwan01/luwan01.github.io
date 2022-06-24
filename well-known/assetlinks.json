@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.zhijin.testlinkaccount",
+    "sha256_cert_fingerprints":
+    ["AF:9E:08:0E:CC:CC:1E:F5:A7:FC:0E:18:D0:FD:46:80:8A:F1:41:C0:CB:14:4E:EC:CA:6E:C6:5D:19:11:FC:DF"]
+  }
+}]
